@@ -1,0 +1,544 @@
+# 1. 定义策略组 (Proxy Groups)
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+  - name: 🚀 手动切换
+    include-all: true
+    type: select
+
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    # 使用 all 关键字包含所有节点
+    include-all: true 
+
+ # --- 🛑 广告拦截 ---
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+ # --- 🍎 苹果服务 ---
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- Ⓜ️ 微软服务 ---
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- 🔍 谷歌服务 ---
+  - name: 🔍 谷歌服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- 📹 油管视频 ---
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- 🤖 AI 平台 ---
+  - name: 🤖 AI 平台
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- 🌍 国外媒体 ---
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+ # --- 🎯 国内直连 ---
+  - name: 🎯 国内直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇸 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🎥 奈飞节点
+      - 🐟 其它节点
+      - 🚀 手动切换
+      - DIRECT
+
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)(HK|Hong Kong|香港)"
+
+  - name: 🇹🇼 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)(TW|Taiwan|台湾)"
+
+  - name: 🇺🇸 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)(US|America|美国|United States)"
+
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)(SG|Singapore|新加坡|狮城)"
+
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: "(?i)(JP|Japan|日本)"
+  
+  - name: 🎥 奈飞节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+
+  - name: 🐟 其它节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    # 排除掉上述所有主要地区
+    filter: "(?i)^(?!.*(NF|奈飞|解锁|Netflix|NETFLIX|Media|HK|Hong Kong|香港|TW|Taiwan|台湾|US|America|美国|SG|Singapore|新加坡|JP|Japan|日本)).*"
+
+# 2. rule-providers：相当于“仓库”
+# 注意：规则是“从上往下”匹配的，一旦匹配成功，就不再往下找。
+rule-providers:
+   # 1 --- 🛑 广告拦截 (Reject) ---
+  Advertising:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list"
+    path: ./ruleset/Advertising.list
+    interval: 86400
+
+  Hijacking:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Hijacking/Hijacking.list"
+    path: ./ruleset/Hijacking.list
+    interval: 86400
+
+  Privacy:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Privacy/Privacy.list"
+    path: ./ruleset/Privacy.list
+    interval: 86400
+
+  BlockHttpDNS:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BlockHttpDNS/BlockHttpDNS.list"
+    path: ./ruleset/BlockHttpDNS.list
+    interval: 86400
+
+   #2  --- 🍎 苹果服务 ---
+  Apple:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    path: ./ruleset/Apple.list
+    interval: 86400
+ 
+  AppleID:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleID/AppleID.list"
+    path: ./ruleset/AppleID.list
+    interval: 86400
+ 
+   #3 --- Ⓜ️ 微软服务 ---
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list"
+    path: ./ruleset/Microsoft.list
+    interval: 86400
+
+  MicrosoftEdge:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/MicrosoftEdge/MicrosoftEdge.list"
+    path: ./ruleset/MicrosoftEdge.list
+    interval: 86400
+
+  Bing:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Bing/Bing.list"
+    path: ./ruleset/Bing.list
+    interval: 86400
+
+   #4 --- 🔍 谷歌服务  ---
+  Google:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list"
+    path: ./ruleset/Google.list
+    interval: 86400
+
+  GoogleDrive:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GoogleDrive/GoogleDrive.list"
+    path: ./ruleset/GoogleDrive.list
+    interval: 86400
+
+  GoogleEarth:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GoogleEarth/GoogleEarth.list"
+    path: ./ruleset/GoogleEarth.list
+    interval: 86400
+
+  GoogleFCM:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GoogleFCM/GoogleFCM.list"
+    path: ./ruleset/GoogleFCM.list
+    interval: 86400
+
+  GoogleSearch:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GoogleSearch/GoogleSearch.list"
+    path: ./ruleset/GoogleSearch.list
+    interval: 86400
+
+  GoogleVoice:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GoogleVoice/GoogleVoice.list"
+    path: ./ruleset/GoogleVoice.list
+    interval: 86400
+
+  Chromecast:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Chromecast/Chromecast.list"
+    path: ./ruleset/Chromecast.list
+    interval: 86400
+
+   #5 --- 📹 油管视频 ---
+  YouTube:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list"
+    path: ./ruleset/YouTube.list
+    interval: 86400
+
+  Netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list"
+    path: ./ruleset/Netflix.list
+    interval: 86400
+
+   #6 --- 🤖 AI 平台 ---
+  OpenAI:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list"
+    path: ./ruleset/OpenAI.list
+    interval: 86400
+  Gemini:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Gemini/Gemini.list"
+    path: ./ruleset/Gemini.list
+    interval: 86400
+  BardAI:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BardAI/BardAI.list"
+    path: ./ruleset/BardAI.list
+    interval: 86400
+  Copilot:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list"
+    path: ./ruleset/Copilot.list
+    interval: 86400
+
+    
+   #7 --- 🌍 国外媒体 ---
+  Telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list"
+    path: ./ruleset/Telegram.list
+    interval: 86400
+
+  GitHub:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list"
+    path: ./ruleset/GitHub.list
+    interval: 86400
+
+
+
+   #8 --- 🎯 国内直连 (Direct) ---
+  Directcn:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Direct/Direct.list"
+    path: ./ruleset/Direct.list
+    interval: 86400
+
+  China:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    path: ./ruleset/China.list
+    interval: 86400
+
+  ChinaIPs:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPs/ChinaIPs.list"
+    path: ./ruleset/ChinaIPs.list
+    interval: 86400
+
+  ChinaIPs_No_IPv6:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPs/ChinaIPs_No_IPv6.list"
+    path: ./ruleset/ChinaIPs_No_IPv6.list
+    interval: 86400
+
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMedia/ChinaMedia.list"
+    path: ./ruleset/ChinaMedia.list
+    interval: 86400
+
+  ChinaMax:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMax/ChinaMax.list"
+    path: ./ruleset/ChinaMax.list
+    interval: 86400
+
+  ChinaMax_No_IPv6:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMax/ChinaMax_No_IPv6.list"
+    path: ./ruleset/ChinaMax_No_IPv6.list
+    interval: 86400
+
+  ChinaIPsBGP:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPsBGP/ChinaIPsBGP.list"
+    path: ./ruleset/ChinaIPsBGP.list
+    interval: 86400
+
+  ChinaMaxNoIP:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMaxNoIP/ChinaMaxNoIP.list"
+    path: ./ruleset/ChinaMaxNoIP.list
+    interval: 86400
+
+  ChinaASN:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaASN/ChinaASN.list"
+    path: ./ruleset/ChinaASN.list
+    interval: 86400
+
+  ChinaMaxNoMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMaxNoMedia/ChinaMaxNoMedia.list"
+    path: ./ruleset/ChinaMaxNoMedia.list
+    interval: 86400
+
+
+
+#3、rules：相当于“调度员”，指挥特定的仓库走哪个节点
+rules:
+  # 1. 🚫 去广告和隐私保护 (使用 REJECT 策略直接拒绝连接)
+  - RULE-SET,Advertising,🛑 广告拦截
+  - RULE-SET,Hijacking,🛑 广告拦截
+  - RULE-SET,Privacy,🛑 广告拦截
+  - RULE-SET,BlockHttpDNS,🛑 广告拦截
+
+  # 2. 🍎 苹果服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,AppleID,🍎 苹果服务
+
+
+  # 3. Ⓜ️ 微软服务
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,MicrosoftEdge,Ⓜ️ 微软服务
+  - RULE-SET,Bing,Ⓜ️ 微软服务
+
+  # 4. 🔍 谷歌服务
+  - RULE-SET,Google,🔍 谷歌服务
+  - RULE-SET,GoogleDrive,🔍 谷歌服务
+  - RULE-SET,GoogleEarth,🔍 谷歌服务
+  - RULE-SET,GoogleFCM,🔍 谷歌服务
+  - RULE-SET,GoogleSearch,🔍 谷歌服务
+  - RULE-SET,GoogleVoice,🔍 谷歌服务
+  - RULE-SET,Chromecast,🔍 谷歌服务
+
+  # 5. 📹 油管视频
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,Netflix,🎥 奈飞视频
+
+  # 6. 🤖 AI 工具
+  - RULE-SET,OpenAI,🤖 AI 平台
+  - RULE-SET,Gemini,🤖 AI 平台
+  - RULE-SET,BardAI,🤖 AI 平台
+  - RULE-SET,Copilot,🤖 AI 平台
+
+  # 7. 🌍 国外媒体
+  - RULE-SET,Telegram,🌍 国外媒体
+  - RULE-SET,GitHub,🌍 国外媒体
+
+  # 8. 🎯 国内直连 (China Direct)
+  - RULE-SET,Directcn,🎯 国内直连
+  - RULE-SET,China,🎯 国内直连
+  - RULE-SET,ChinaIPs,🎯 国内直连
+  - RULE-SET,ChinaIPs_No_IPv6,🎯 国内直连
+  - RULE-SET,ChinaMedia,🎯 国内直连
+  - RULE-SET,ChinaMax,🎯 国内直连
+  - RULE-SET,ChinaMax_No_IPv6,🎯 国内直连
+  - RULE-SET,ChinaIPsBGP,🎯 国内直连
+  - RULE-SET,ChinaMaxNoIP,🎯 国内直连
+  - RULE-SET,ChinaASN,🎯 国内直连
+  - RULE-SET,ChinaMaxNoMedia,🎯 国内直连
+  # 防止规则遗漏，再次使用 GeoIP 兜底
+  - GEOIP,CN,DIRECT
+  
+  # 9. 🐟 兜底规则 (漏网之鱼)
+  # 如果上面都没匹配到，走自动选择或其它节点
+  - MATCH,🐟 漏网之鱼

@@ -1,3 +1,5 @@
+# ===> 2026.01.12 update 微信输入法直连
+
 # 1. 定义策略组 (Proxy Groups)
 
 proxy-groups:
@@ -263,6 +265,15 @@ rule-providers:
     path: ./ruleset/Advertising_Classical.yaml
     interval: 86400
 
+
+  WeType:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeType/WeType.yaml"
+    path: ./ruleset/WeType.yaml
+    interval: 86400
+
+
    # 2 --- 🤖 AI 平台 ---
   OpenAI:
     type: http
@@ -410,6 +421,10 @@ rules:
 
    # 1 --- 🛑 广告拦截 (Reject) ---
   - RULE-SET,Advertising,🛑 广告拦截
+
+   # 国内直连插入
+  - RULE-SET,WeType,DIRECT
+
 
    # 2 --- 🤖 AI 平台 ---
   - RULE-SET,OpenAI,🤖 AI 平台

@@ -5,7 +5,7 @@
 
 [rewrite_local]
 # 抓取签到数据
-^https:\/\/m\.mallcoo\.cn\/api\/user\/User\/CheckinV2 url script-request-body Jinqiaoguoji.js
+^https:\/\/m\.mallcoo\.cn\/api\/user\/User\/CheckinV2 url script-request-body guoji.js
 
 [task_local]
 # 每天上午 9:35 执行签到

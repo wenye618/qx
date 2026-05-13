@@ -3,10 +3,10 @@
 说明：配合 Quantumult X 使用，自动抓取 Token 并实现每日签到。
 
 [rewrite_local]
-^https:\/\/weixinnew\.lalaport-jq\.com:\d+\/api\/Sign\/(SignIn|GetUserSignData) url script-request-header lalaport.js
+^https:\/\/weixinnew\.lalaport-jq\.com:\d+\/api\/Sign\/(SignIn|GetUserSignData) url script-request-header https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/lalaport.js
 
 [task_local]
-30 9 * * * lalaport.js, tag=啦啦宝都签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Gift.png
+30 9 * * * https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/lalaport.js, tag=啦啦宝都签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Gift.png
 
 [mitm]
 hostname = weixinnew.lalaport-jq.com

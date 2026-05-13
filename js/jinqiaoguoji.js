@@ -9,7 +9,7 @@
 
 [task_local]
 # 每天上午 9:35 执行签到
-35 9 * * * https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/guoji.js, tag=金桥国际签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Shopping.png
+35 9 * * * raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/jinqiaoguoji.jsguoji.js, tag=金桥国际签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Shopping.png
 
 [mitm]
 hostname = m.mallcoo.cn

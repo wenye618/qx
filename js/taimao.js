@@ -3,10 +3,10 @@
 说明：放宽了抓取条件，只要是带有太茂MallId的数据包统统拦截。
 
 [rewrite_local]
-^https:\/\/m\.mallcoo\.cn\/api\/.* url script-request-body taimao.js
+^https:\/\/m\.mallcoo\.cn\/api\/.* url script-request-body https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/taimao.js
 
 [task_local]
-45 9 * * * taimao.js, tag=金桥太茂签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Shopping.png
+45 9 * * * https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/taimao.js, tag=金桥太茂签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Shopping.png
 
 [mitm]
 hostname = m.mallcoo.cn

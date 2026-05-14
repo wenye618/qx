@@ -1,0 +1,9 @@
+{
+  "name": "我的专属签到合集",
+  "description": "自用日常打卡任务库，附带一键添加抓包组件功能。",
+  "task": [
+    "30 9 * * * https://raw.githubusercontent.com/你的用户名/你的仓库/main/js/lalaport.js, tag=啦啦宝都签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Gift.png, addons=https://raw.githubusercontent.com/你的用户名/你的仓库/main/snippets/lalaport_cookie.snippet",
+    
+    "45 9 * * * https://raw.githubusercontent.com/你的用户名/你的仓库/main/js/taimao.js, tag=金桥太茂签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Shopping.png, addons=https://raw.githubusercontent.com/你的用户名/你的仓库/main/snippets/taimao_cookie.snippet"
+  ]
+}

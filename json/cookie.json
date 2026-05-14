@@ -3,19 +3,19 @@
   "description": "自用日常打卡任务库，完美支持一键添加抓包组件。",
   "task": [
     {
-      "config": "30 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/lalaport.js, tag=啦啦宝都签到,  enabled=true",
+      "config": "30 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/lalaport.js, tag=啦啦宝都签到, img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/lalport.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/wenye618/qx/main/json/lalaport.conf, tag=啦啦宝都_获取Cookie"
     },
     {
-      "config": "35 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/jinqiaoguoji.js, tag=金桥国际签到,  enabled=true",
+      "config": "35 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/jinqiaoguoji.js, tag=金桥国际签到, img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/jinqiaoguoji.png,  enabled=true",
       "addons": "https://raw.githubusercontent.com/wenye618/qx/main/json/jinqiaoguoji.conf, tag=金桥国际_获取Cookie"
     },
     {
-      "config": "40 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/fengyun.js, tag=风云再起签到,  enabled=true",
+      "config": "40 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/fengyun.js, tag=风云再起签到,  img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/fengyun.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/wenye618/qx/main/json/fengyun.conf, tag=风云再起_获取Cookie"
     },
     {
-      "config": "45 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/taimao.js, tag=金桥太茂签到,  enabled=true",
+      "config": "45 7 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/taimao.js, tag=金桥太茂签到, img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/taimao.png,  enabled=true",
       "addons": "https://raw.githubusercontent.com/wenye618/qx/main/json/taimao.conf, tag=金桥太茂_获取Cookie"
     }
   ]

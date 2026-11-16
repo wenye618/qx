@@ -4,7 +4,7 @@
   "task": [
    
      {
-      "config": "30 6 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/glados_checkin.js, tag=Glados签到, img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/glados.png, enabled=true",
+      "config": "30 6 * * * https://raw.githubusercontent.com/wenye618/qx/main/js/glados_checkin.js, tag=Glados签到, img-url=https://raw.githubusercontent.com//wenye618/qx/main/png/glados-light.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/wenye618/qx/main/json/glados.conf, tag=glados_获取Cookie"
     },
     

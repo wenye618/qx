@@ -39,10 +39,9 @@ v1.9.0 修复：
 4. 定时任务自动签到
 
 [rewrite_local]
-^https://(glados\.cloud|glados\.rocks|glados\.one|glados\.vip|glados\.network|glados\.space|railgun\.info)/(console/account|console/checkin|api/user/status|api/user/points|api/user/iqi|api/user/checkin/challenge)$ url script-request-header glados_qx_checkin_v190.js
-
+^https://(glados\.cloud|glados\.rocks|glados\.one|glados\.vip|glados\.network|glados\.space|railgun\.info)/(console/account|console/checkin|api/user/status|api/user/points|api/user/iqi|api/user/checkin/challenge)$ url script-request-header https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/glados_qx_checkin_v190.js
 [task_local]
-5 0 * * * glados_qx_checkin_v190.js, tag=GLaDOS 签到, enabled=true
+5 0 * * * https://raw.githubusercontent.com/wenye618/qx/refs/heads/main/js/glados_qx_checkin_v190.js, tag=GLaDOS 签到, enabled=true
 
 [MITM]
 hostname = %APPEND% glados.cloud, glados.rocks, glados.one, glados.vip, glados.network, glados.space, railgun.info
